@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "exceljs": "^4.4.0",
+    "prettier": "^3.9.10"
+  },
+  "name": "sqa-portfolio-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio hub site for my SQA projects",
+  "author": "Sudipta Kumar Das",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "build:template": "node scripts/build-template.js",
+    "test": "playwright test",
+    "format": "prettier --write \"**/*.{html,css,js,ts}\"",
+    "lint": "prettier --check \"**/*.{html,css,js,ts}\""
+  }
+}
