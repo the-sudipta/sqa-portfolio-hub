@@ -56,7 +56,10 @@
             <li><strong>81</strong><span>manual test cases executed</span></li>
             <li><strong>22</strong><span>real UI defects reported</span></li>
             <li><strong>16</strong><span>API findings with evidence</span></li>
-            <li><strong>113</strong><span>automated checks (50 Playwright tests, 63 API requests)</span></li>
+            <li>
+              <strong>320</strong
+              ><span>automated tests and API checks (Playwright, Selenium, Postman, pytest, SQL)</span>
+            </li>
           </ul>
         </div>
       </section>
@@ -156,32 +159,118 @@
               </div>
             </article>
 
-            <article class="card upcoming">
+            <article class="card">
               <span class="tier">UI automation</span>
               <h3>Selenium Java TestNG Framework</h3>
-              <p>Java 17, Selenium 4, TestNG and Excel-driven data with Extent Reports.</p>
-              <p class="status">In progress</p>
+              <p>Java 17, Selenium 4 and TestNG with PageFactory page objects, Excel-driven data and parallel runs.</p>
+              <ul class="tags">
+                <li>Selenium</li>
+                <li>Java</li>
+                <li>TestNG</li>
+                <li>Apache POI</li>
+              </ul>
+              <dl>
+                <dt>What was tested</dt>
+                <dd>
+                  Register, login, search, cart, checkout to payment page, contact upload; alerts, frames, windows,
+                  waits
+                </dd>
+              </dl>
+              <ul class="numbers">
+                <li><strong>36</strong> tests</li>
+                <li><strong>2</strong> threads in parallel</li>
+                <li><strong>10</strong> Excel-driven runs</li>
+              </ul>
+              <div class="card-links">
+                <a class="button" href="https://github.com/the-sudipta/selenium-java-testng-framework">Repository</a>
+                <a class="button primary" href="https://the-sudipta.github.io/selenium-java-testng-framework/"
+                  >Live report</a
+                >
+              </div>
             </article>
 
-            <article class="card upcoming">
+            <article class="card">
               <span class="tier">Database testing</span>
               <h3>SQL Database Testing</h3>
-              <p>40 tester queries and pytest data-quality checks on SQLite, including ETL validation.</p>
-              <p class="status">In progress</p>
+              <p>
+                SQL queries and pytest data-quality checks on SQLite, with seeded defects that the checks must catch.
+              </p>
+              <ul class="tags">
+                <li>SQL</li>
+                <li>SQLite</li>
+                <li>pytest</li>
+                <li>ETL</li>
+              </ul>
+              <dl>
+                <dt>What was tested</dt>
+                <dd>
+                  Duplicates, orphans, totals reconciliation, date logic on Chinook and a shop schema; CSV-to-table ETL
+                </dd>
+              </dl>
+              <ul class="numbers">
+                <li><strong>40</strong> queries</li>
+                <li><strong>12/12</strong> seeded defects caught</li>
+                <li><strong>113</strong> tests</li>
+              </ul>
+              <div class="card-links">
+                <a class="button" href="https://github.com/the-sudipta/sql-database-testing">Repository</a>
+                <a class="button primary" href="https://the-sudipta.github.io/sql-database-testing/">Live report</a>
+              </div>
             </article>
 
-            <article class="card upcoming">
+            <article class="card">
               <span class="tier">API automation</span>
               <h3>API Automation with pytest</h3>
-              <p>Python API clients, schema and contract tests, CRUD chains and an HTML report.</p>
-              <p class="status">In progress</p>
+              <p>Python clients per resource, pydantic and JSON-schema contracts, fixtures for auth and test data.</p>
+              <ul class="tags">
+                <li>pytest</li>
+                <li>requests</li>
+                <li>pydantic</li>
+                <li>JSON Schema</li>
+              </ul>
+              <dl>
+                <dt>What was tested</dt>
+                <dd>
+                  Booking CRUD chain, filters, negative and boundary cases, contracts; product search and account
+                  lifecycle
+                </dd>
+              </dl>
+              <ul class="numbers">
+                <li><strong>58</strong> tests</li>
+                <li><strong>8</strong> known defects as strict xfail</li>
+              </ul>
+              <div class="card-links">
+                <a class="button" href="https://github.com/the-sudipta/api-automation-pytest">Repository</a>
+                <a class="button primary" href="https://the-sudipta.github.io/api-automation-pytest/">Live report</a>
+              </div>
             </article>
 
-            <article class="card upcoming">
+            <article class="card">
               <span class="tier">Performance testing</span>
               <h3>k6 Performance Testing</h3>
-              <p>Smoke, load, stress, spike and soak tests against a small API that runs locally.</p>
-              <p class="status">In progress</p>
+              <p>Smoke, load, stress, spike and soak tests with SLO thresholds against a small API inside the repo.</p>
+              <ul class="tags">
+                <li>k6</li>
+                <li>SLOs</li>
+                <li>Node.js</li>
+                <li>Bottleneck analysis</li>
+              </ul>
+              <dl>
+                <dt>What was found</dt>
+                <dd>
+                  A report endpoint blocking the event loop; caching it cut the product list median from 94 ms to 0.52
+                  ms
+                </dd>
+              </dl>
+              <ul class="numbers">
+                <li><strong>5</strong> test types</li>
+                <li><strong>56,000+</strong> requests, 0 errors</li>
+                <li><strong>180×</strong> faster after the fix</li>
+              </ul>
+              <div class="card-links">
+                <a class="button" href="https://github.com/the-sudipta/k6-performance-testing">Repository</a>
+                <a class="button primary" href="https://the-sudipta.github.io/k6-performance-testing/">Live report</a>
+              </div>
             </article>
           </div>
         </div>
@@ -222,9 +311,29 @@
                   <td>API Testing with Postman &amp; Newman</td>
                 </tr>
                 <tr>
+                  <td>API automation</td>
+                  <td>Python, pytest, requests, pydantic contracts, fixtures, parametrized and negative tests</td>
+                  <td>API Automation with pytest</td>
+                </tr>
+                <tr>
                   <td>UI automation</td>
-                  <td>Playwright + TypeScript, Page Object Model, fixtures, cross-browser runs</td>
-                  <td>Playwright E2E Framework</td>
+                  <td>
+                    Playwright + TypeScript (POM, fixtures, 3 browsers); Selenium 4 + Java + TestNG (PageFactory,
+                    Excel-driven data, parallel runs, Extent Reports)
+                  </td>
+                  <td>Playwright E2E Framework, Selenium Java TestNG Framework</td>
+                </tr>
+                <tr>
+                  <td>SQL / data testing</td>
+                  <td>
+                    Joins, GROUP BY/HAVING, subqueries, CTEs, window functions, data-quality rules, ETL validation
+                  </td>
+                  <td>SQL Database Testing</td>
+                </tr>
+                <tr>
+                  <td>Performance testing</td>
+                  <td>k6 smoke, load, stress, spike and soak tests, SLO thresholds, result analysis and reporting</td>
+                  <td>k6 Performance Testing</td>
                 </tr>
                 <tr>
                   <td>Accessibility &amp; visual</td>
