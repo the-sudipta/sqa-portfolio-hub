@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sudipta Kumar Das — Junior SQA Engineer</title>
+    <meta
+      name="description"
+      content="QA portfolio of Sudipta Kumar Das: manual testing, API testing with Postman, Playwright and Selenium automation, SQL and performance testing."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      // Apply a saved theme before first paint to avoid a flash.
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') document.documentElement.setAttribute('data-theme', saved);
+      } catch {
+        /* storage blocked */
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#top">Sudipta Kumar Das</a>
+        <nav aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#process">How I test</a></li>
+            <li><a href="#template">Template</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark mode</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <h1>Sudipta Kumar Das</h1>
+          <p class="role">Junior SQA Engineer — Manual · API · Automation</p>
+          <p class="lead">
+            I find problems before users do. I write clear test cases, report bugs with evidence, test APIs with Postman
+            and automate the critical journeys with Playwright. These projects are my portfolio work on public practice
+            applications — every bug listed here was reproduced and documented with evidence.
+          </p>
+          <div class="links">
+            <a class="button primary" href="#projects">See the projects</a>
+            <a class="button" href="https://github.com/the-sudipta">GitHub</a>
+            <a class="button" href="mailto:engineer.sudipta.kumar.das@gmail.com">Email</a>
+          </div>
+          <ul class="stats" aria-label="Portfolio in numbers">
+            <li><strong>81</strong><span>manual test cases executed</span></li>
+            <li><strong>22</strong><span>real UI defects reported</span></li>
+            <li><strong>16</strong><span>API findings with evidence</span></li>
+            <li><strong>113</strong><span>automated checks (50 Playwright tests, 63 API requests)</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <p class="section-intro">
+            Each project has its own repository, a README written for reviewers and a live test report published by
+            GitHub Actions.
+          </p>
+          <div class="cards">
+            <article class="card">
+              <span class="tier">Manual testing</span>
+              <h3>Manual Testing Case Study</h3>
+              <p>A full QA cycle on an e-commerce shop and a hotel booking site: plan, design, execute, report.</p>
+              <ul class="tags">
+                <li>Test plan</li>
+                <li>Excel test cases</li>
+                <li>Bug reports</li>
+                <li>RTM</li>
+              </ul>
+              <dl>
+                <dt>What was tested</dt>
+                <dd>
+                  Login, catalogue, cart, checkout (Sauce Demo); rooms, availability, contact form, admin (Restful
+                  Booker Platform)
+                </dd>
+              </dl>
+              <ul class="numbers">
+                <li><strong>81</strong> test cases</li>
+                <li><strong>22</strong> bugs found</li>
+                <li><strong>17</strong> requirements traced</li>
+              </ul>
+              <div class="card-links">
+                <a class="button" href="https://github.com/the-sudipta/manual-testing-case-study">Repository</a>
+                <a class="button primary" href="https://the-sudipta.github.io/manual-testing-case-study/"
+                  >Live report</a
+                >
+              </div>
+            </article>
+
+            <article class="card">
+              <span class="tier">API testing</span>
+              <h3>API Testing with Postman &amp; Newman</h3>
+              <p>
+                Postman collections for two REST APIs with chaining, schema contracts, negative and data-driven tests.
+              </p>
+              <ul class="tags">
+                <li>Postman</li>
+                <li>Newman</li>
+                <li>JSON Schema</li>
+                <li>CI</li>
+              </ul>
+              <dl>
+                <dt>What was tested</dt>
+                <dd>
+                  Auth, booking CRUD chain, invalid data and methods (Restful Booker); products, search, accounts
+                  (Automation Exercise)
+                </dd>
+              </dl>
+              <ul class="numbers">
+                <li><strong>63</strong> requests</li>
+                <li><strong>215</strong> assertions</li>
+                <li><strong>16</strong> findings</li>
+              </ul>
+              <div class="card-links">
+                <a class="button" href="https://github.com/the-sudipta/api-testing-postman-newman">Repository</a>
+                <a class="button primary" href="https://the-sudipta.github.io/api-testing-postman-newman/"
+                  >Live report</a
+                >
+              </div>
+            </article>
+
+            <article class="card">
+              <span class="tier">UI automation</span>
+              <h3>Playwright E2E Framework</h3>
+              <p>A TypeScript framework with page objects and fixtures, running on Chromium, Firefox and WebKit.</p>
+              <ul class="tags">
+                <li>Playwright</li>
+                <li>TypeScript</li>
+                <li>POM</li>
+                <li>axe-core</li>
+              </ul>
+              <dl>
+                <dt>What was tested</dt>
+                <dd>Login, sorting, cart, checkout, known defects, accessibility, visual checks, booking API</dd>
+              </dl>
+              <ul class="numbers">
+                <li><strong>50</strong> tests</li>
+                <li><strong>3</strong> browsers</li>
+                <li><strong>7</strong> known defects automated</li>
+              </ul>
+              <div class="card-links">
+                <a class="button" href="https://github.com/the-sudipta/playwright-e2e-framework">Repository</a>
+                <a class="button primary" href="https://the-sudipta.github.io/playwright-e2e-framework/">Live report</a>
+              </div>
+            </article>
+
+            <article class="card upcoming">
+              <span class="tier">UI automation</span>
+              <h3>Selenium Java TestNG Framework</h3>
+              <p>Java 17, Selenium 4, TestNG and Excel-driven data with Extent Reports.</p>
+              <p class="status">In progress</p>
+            </article>
+
+            <article class="card upcoming">
+              <span class="tier">Database testing</span>
+              <h3>SQL Database Testing</h3>
+              <p>40 tester queries and pytest data-quality checks on SQLite, including ETL validation.</p>
+              <p class="status">In progress</p>
+            </article>
+
+            <article class="card upcoming">
+              <span class="tier">API automation</span>
+              <h3>API Automation with pytest</h3>
+              <p>Python API clients, schema and contract tests, CRUD chains and an HTML report.</p>
+              <p class="status">In progress</p>
+            </article>
+
+            <article class="card upcoming">
+              <span class="tier">Performance testing</span>
+              <h3>k6 Performance Testing</h3>
+              <p>Smoke, load, stress, spike and soak tests against a small API that runs locally.</p>
+              <p class="status">In progress</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <p class="section-intro">What I use, and where you can see it in my work.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Area</th>
+                  <th scope="col">Tools and techniques</th>
+                  <th scope="col">Shown in</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Manual testing</td>
+                  <td>
+                    Test plans, scenarios, test cases (EP, BVA, decision tables, state transition), exploratory
+                    sessions, RTM
+                  </td>
+                  <td>Manual Testing Case Study</td>
+                </tr>
+                <tr>
+                  <td>Bug reporting</td>
+                  <td>
+                    Clear steps, expected vs actual, severity and priority, screenshots, raw responses, GitHub Issues
+                  </td>
+                  <td>Manual Testing Case Study, API Testing</td>
+                </tr>
+                <tr>
+                  <td>API testing</td>
+                  <td>Postman, Newman, chaining, JSON Schema, negative and data-driven tests</td>
+                  <td>API Testing with Postman &amp; Newman</td>
+                </tr>
+                <tr>
+                  <td>UI automation</td>
+                  <td>Playwright + TypeScript, Page Object Model, fixtures, cross-browser runs</td>
+                  <td>Playwright E2E Framework</td>
+                </tr>
+                <tr>
+                  <td>Accessibility &amp; visual</td>
+                  <td>axe-core (WCAG 2.1 A/AA), screenshot comparison</td>
+                  <td>Playwright E2E Framework</td>
+                </tr>
+                <tr>
+                  <td>CI / reporting</td>
+                  <td>GitHub Actions, nightly runs, HTML reports on GitHub Pages, JUnit XML</td>
+                  <td>All projects</td>
+                </tr>
+                <tr>
+                  <td>Process</td>
+                  <td>SDLC / STLC, defect life cycle, entry and exit criteria, Git</td>
+                  <td>All projects</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="process">
+        <div class="container">
+          <h2>How I test</h2>
+          <p class="section-intro">The same steps in every project, from the first question to the last report.</p>
+          <ol class="process">
+            <li>
+              <h3>Requirement analysis</h3>
+              <p>List what the system must do and ask about anything unclear.</p>
+            </li>
+            <li>
+              <h3>Test plan</h3>
+              <p>Scope, approach, environments, entry and exit criteria, risks.</p>
+            </li>
+            <li>
+              <h3>Test design</h3>
+              <p>Scenarios and cases with formal techniques, traced to requirements.</p>
+            </li>
+            <li>
+              <h3>Execution</h3>
+              <p>Run the cases, record honest results, explore around the edges.</p>
+            </li>
+            <li>
+              <h3>Bug reporting</h3>
+              <p>Reproduce twice, then report with steps, evidence, severity and priority.</p>
+            </li>
+            <li>
+              <h3>Regression</h3>
+              <p>Automate the stable checks and re-run them on every change.</p>
+            </li>
+            <li>
+              <h3>Report</h3>
+              <p>Summarise results, risks and a clear release recommendation.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="template">
+        <div class="container">
+          <h2>Test case template</h2>
+          <div class="download">
+            <div>
+              <strong>My Excel test case template</strong>
+              <p>The same columns I use in my projects, with dropdowns for status, severity, priority and technique.</p>
+            </div>
+            <a class="button primary" href="assets/files/SQA_Test_Case_Template.xlsx" download>Download (.xlsx)</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>About and contact</h2>
+          <p>
+            CSE graduate (CGPA 3.92, four Dean's List awards), MSc in Computer Science (final semester) at AIUB and
+            PMSCS at Jahangirnagar University. I teach introductory C++ at AIUB. I am looking for a Junior or Trainee
+            SQA role, onsite in Bangladesh or remote.
+          </p>
+          <div class="links">
+            <a class="button primary" href="mailto:engineer.sudipta.kumar.das@gmail.com"
+              >engineer.sudipta.kumar.das@gmail.com</a
+            >
+            <a class="button" href="https://github.com/the-sudipta">github.com/the-sudipta</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 Sudipta Kumar Das. All rights reserved.</div>
+    </footer>
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>
