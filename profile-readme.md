@@ -15,10 +15,10 @@ introductory C++ at AIUB.
 | [Manual Testing Case Study](https://github.com/the-sudipta/manual-testing-case-study) | Test plan, 81 executed test cases, 22 real bug reports, RTM, summary report | [live](https://the-sudipta.github.io/manual-testing-case-study/) |
 | [API Testing with Postman & Newman](https://github.com/the-sudipta/api-testing-postman-newman) | 63 requests, 215 assertions, schema contracts, 16 API findings | [live](https://the-sudipta.github.io/api-testing-postman-newman/) |
 | [Playwright E2E Framework](https://github.com/the-sudipta/playwright-e2e-framework) | TypeScript, POM, fixtures, 3 browsers, axe-core, visual checks, CI matrix | [live](https://the-sudipta.github.io/playwright-e2e-framework/) |
-| [Selenium Java TestNG Framework](https://github.com/the-sudipta/selenium-java-testng-framework) | Java 17, Selenium 4, TestNG, Excel-driven data, Extent Reports | [live](https://the-sudipta.github.io/selenium-java-testng-framework/) |
-| [SQL Database Testing](https://github.com/the-sudipta/sql-database-testing) | 40 tester queries, data-quality tests, ETL validation | — |
-| [API Automation with pytest](https://github.com/the-sudipta/api-automation-pytest) | Python API clients, contract and CRUD tests | [live](https://the-sudipta.github.io/api-automation-pytest/) |
-| [k6 Performance Testing](https://github.com/the-sudipta/k6-performance-testing) | Smoke, load, stress, spike and soak tests on a local API | [live](https://the-sudipta.github.io/k6-performance-testing/) |
+| [Selenium Java TestNG Framework](https://github.com/the-sudipta/selenium-java-testng-framework) | 36 tests: Java 17, Selenium 4, TestNG, PageFactory, Excel-driven data, Extent Reports | [live](https://the-sudipta.github.io/selenium-java-testng-framework/) |
+| [SQL Database Testing](https://github.com/the-sudipta/sql-database-testing) | 40 tester queries, 22 data-quality rules, 12/12 seeded defects caught, ETL validation | [live](https://the-sudipta.github.io/sql-database-testing/) |
+| [API Automation with pytest](https://github.com/the-sudipta/api-automation-pytest) | 58 tests: CRUD chain, pydantic + JSON-schema contracts, negative cases | [live](https://the-sudipta.github.io/api-automation-pytest/) |
+| [k6 Performance Testing](https://github.com/the-sudipta/k6-performance-testing) | Smoke, load, stress, spike and soak tests on a local API; found and proved an event-loop bottleneck | [live](https://the-sudipta.github.io/k6-performance-testing/) |
 
 #### Tools
 
